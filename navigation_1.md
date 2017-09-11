@@ -1,5 +1,5 @@
 # Android Navigation Drawer 
-# Part 1
+# Part 1 (Create Drawer)
 
 	* Steps
 	* Desain Google Icon
