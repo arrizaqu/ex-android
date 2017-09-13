@@ -2,6 +2,7 @@
 	* Dependency 
 	* Uses Permission 
 	* Example
+	* JSONObject 
 	
 ## Dependency - gradle
 	dependencies {
@@ -35,3 +36,18 @@
 			});
 		}
 	});
+	
+## JSONObject
+	public void processData(String data){
+        try{
+            JSONArray jsonArray = new JSONArray(data);
+            for(int i = 0; i < jsonArray.length(); i++){
+                JSONObject jsonObject = jsonArray.getJSONObject(i);
+                String name  = jsonObject.getString("name");
+                Log.d("hasil", name);
+            }
+        } catch (Exception e){
+            e.printStackTrace();
+        }
+
+    }
