@@ -1,7 +1,7 @@
 # Android Networking with OkHttp
 	* Dependency 
 	* Uses Permission 
-	* Example
+	* Example 
 	* JSONObject 
 	
 ## Dependency - gradle
@@ -13,6 +13,12 @@
 	<uses-permission android:name="android.permission.INTERNET"/>
 	
 ## Example
+### Sample 1 
+	OkHttpClient client = new OkHttpClient();
+	Response response = client.newCall(request).execute();
+	String jsonResponse = response.body.string();
+	
+### Sample 2 
 	Request request = new Request.Builder()
                 .url(url)
                 .get()
