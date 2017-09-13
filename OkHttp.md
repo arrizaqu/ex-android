@@ -14,6 +14,11 @@
 	
 ## Example
 ### Sample 1 
+	Request request = new Request.Builder()
+            .url(url)
+            .get()
+            .build();
+			
 	OkHttpClient client = new OkHttpClient();
 	Response response = client.newCall(request).execute();
 	String jsonResponse = response.body.string();
