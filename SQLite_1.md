@@ -11,6 +11,7 @@
 		* Pagination 		
 	* JOIN 
 	* Group By 
+	* Create Table IF NOT EXISTS
 	* Full Sql Script
 	
 ## IDE 
@@ -94,6 +95,13 @@
 	on 
 	employee.department_id = department.id 
 	group by employee.department_id
+
+##	Create table IF NOT EXISTS 
+	create table if not exists contoh (
+		id integer primary key,
+		name text,
+		address text 
+	)
 	
 ## Full Sql Script
 	-- show tables
