@@ -4,7 +4,9 @@
 	* Java Rest-api
 	* Example - GET
 	* JSONObject 
+	* OkHttp with Header
 	* OkHttp with Parameter
+	* Okhttp with RequestBody
 	
 ## Dependency - gradle
 	dependencies {
@@ -106,6 +108,12 @@
         }
 
     }
+
+## OkHttp with Header
+	Request request = new Request.Builder()
+    .header("Authorization", "replace this text with your token")
+    .url("your api url")
+    .build();
 	
 ## OkHttp with Parameter
 ### Android Client
@@ -130,6 +138,44 @@
 	public void serverWithParam(@RequestParam("key_api") String key, @RequestParam("requester") String user){
 		System.out.println("key :" + key );
 		System.out.println("User :" + user );
+	}
+	
+## Okhttp with RequestBody
+### Android Client
+	String url = "http://192.168.159.1:08080/api-app/sendPost";
+	Member member = new Member();
+	member.setName("masyda arrizaqu");
+	member.setAddress("seputih banyak");
+	member.setEmail("arrizaqu@yahoo.com");
+
+	ObjectMapper objectMapper = new ObjectMapper();
+	String memberString = "";
+	try {
+		memberString = objectMapper.writeValueAsString(member);
+	} catch (JsonProcessingException e) {
+		e.printStackTrace();
+	}
+
+	final MediaType JSON = MediaType.parse("application/json");
+	RequestBody requestBody = RequestBody.create(JSON, memberString);
+
+	OkHttpClient client = new OkHttpClient();
+	Request request = new Request.Builder()
+			.url(url)
+			.post(requestBody)
+			.build();
+
+	try{
+		client.newCall(request).execute();
+	}catch (Exception e){
+		e.printStackTrace();
+	}
+	
+### Server
+	@POST
+	@RequestMapping(value = "/sendPost")
+	public void serverWithPost(@RequestBody Member member){
+		System.out.println("email :" + member.getEmail() );
 	}
 	
 ## Reference
