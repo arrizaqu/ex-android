@@ -78,28 +78,7 @@
         }
         
         return phones;
-    }public List<Phone> getAll(){
-        SQLiteDatabase db = pc.getReadableDatabase();
-        String[] field = {COLUMN_ID,COLUMN_EMAIL,COLUMN_NAME};
-       // Cursor c = db.query(TABLE_NAME, field, null, null, null, null, null);
-        String sql = "select * from "+ TABLE_NAME;
-        Cursor c = db.rawQuery(sql, null);
-
-        int iId = c.getColumnIndex(COLUMN_ID);
-        int iEmail = c.getColumnIndex(COLUMN_EMAIL);
-        int iName = c.getColumnIndex(COLUMN_NAME);
-
-        List<Phone> phones = new ArrayList<>();
-        for (c.moveToFirst(); !c.isAfterLast(); c.moveToNext()){
-            Phone phone = new Phone(c.getString(iName), c.getString(iEmail));
-            phone.setId(iId);
-
-            phones.add(phone);
-        }
-        return phones;
     }
-	
-### 
 	
 ## Method 1 - Command Line
 ### Entry "sdk\platform-tools" Path
