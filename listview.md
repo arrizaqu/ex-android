@@ -89,6 +89,38 @@
 		}
 	}
 	
+### ClassHolder
+	public class PhoneHolder {
+		private TextView id;
+		private TextView name;
+		private TextView email;
+
+		public TextView getId() {
+			return id;
+		}
+
+		public void setId(TextView id) {
+			this.id = id;
+		}
+
+		public TextView getName() {
+			return name;
+		}
+
+		public void setName(TextView name) {
+			this.name = name;
+		}
+
+		public TextView getEmail() {
+			return email;
+		}
+
+		public void setEmail(TextView email) {
+			this.email = email;
+		}
+	}
+
+	
 ### Custome SetAdapter
 	listPhoneBook = (ListView) findViewById(R.id.phonebooklist);
 	List<Phone> phones = new ArrayList<>();
