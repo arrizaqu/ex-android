@@ -68,7 +68,7 @@
 ### Last Step 
 	Check result dbname into F:\android\sdk\platform-tools 
 
-## Reference 
+## Reference  
 	https://www.liammoat.com/blog/2017/pull-an-sqlite-database-file-from-an-android-device-for-debugging
 	
 	
