@@ -4,7 +4,7 @@ Pada Zaman modern ini Jika mendengar istilah Android sudah menjadi hal yang bias
 
 # Android Version
 
-Seperti halnya dalam penamaan dan versi Android yang di assign oleh google yang diketahui adalah terinpirasi dari nama kue manis, yang mana hal yang sama seperti penamaan versi software pada umumnya. birikut ini adalah nama dan versi yang sudah menjadi standart utama, yaitu : 
+Seperti halnya dalam penamaan dan versi Android yang di assign oleh google yang diketahui adalah terinpirasi dari nama kue manis, yang mana hal yang sama seperti penamaan versi software pada umumnya. birikut ini adalah nama dan versi yang sudah menjadi standart utama, yaitu :
 
 **Oreo**
 
@@ -21,4 +21,12 @@ Seperti halnya dalam penamaan dan versi Android yang di assign oleh google yang 
 **Ice Cream Sandwich:**Versions 4.0-4.04
 
 Versi Diatas adalah versi standart jika  ingin membuat aplikasi Android, paling tidak ICS adalah hal yang paling dasar harus di setup jika kita menginginkan versi yang agak jadul.
+
+# Referensi 
+
+http://socialcompare.com/en/comparison/android-versions-comparison
+
+https://www.android.com/
+
+
 
