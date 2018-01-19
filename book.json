@@ -2,7 +2,7 @@
     "plugins": ["autocover"],
     "pluginsConfig": {
         "autocover": {
-            "title": "Membangun Aplikasi Android dengan Java ",
+            "title": "Membangun Aplikasi Android dengan Javas",
             "author": "Masyda Arrizaqu",
             "pluginsConfig": {
                 "autocover": {
