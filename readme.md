@@ -1,6 +1,6 @@
 # Mengapa Harus Android ?
 
-Pada Zaman modern ini Jika mendengar istilah Android sudah menjadi hal yang biasa di tengah masyarakat sekarang, karena dimana pun kita selalu dihadapkan dengan koneksi yang tiada henti dengan smartphone, terkhusus adalah Android Smartphone yang memang di masyarakat terutama di Indonesia sangat banyak penggunanya.
+Di zaman modern ini, istilah Android sudah menjadi hal yang biasa di tengah masyarakat sekarang, karena dimana pun kita selalu dihadapkan dengan koneksi yang tiada henti dengan smartphone dan selalu tidak terlepaskan dengan applikasi mobile baik hiburang, transaksi jual beli, atau aktivitas yang lainnya, terkhusus adalah Android Smartphone yang memang di masyarakat terutama di Indonesia sangat banyak penggunanya.
 
 # Android Version
 
@@ -22,11 +22,9 @@ Seperti halnya dalam penamaan dan versi Android yang di assign oleh google yang 
 
 Versi Diatas adalah versi standart jika  ingin membuat aplikasi Android, paling tidak ICS adalah hal yang paling dasar harus di setup jika kita menginginkan versi yang agak jadul.
 
-# Referensi 
+# Referensi
 
-http://socialcompare.com/en/comparison/android-versions-comparison
+[http://socialcompare.com/en/comparison/android-versions-comparison](http://socialcompare.com/en/comparison/android-versions-comparison)
 
-https://www.android.com/
-
-
+[https://www.android.com/](https://www.android.com/)
 
