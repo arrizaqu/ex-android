@@ -20,7 +20,7 @@ Seperti halnya dalam penamaan dan versi Android yang di assign oleh google yang 
 
 **Ice Cream Sandwich:**Versions 4.0-4.04
 
-Versi Diatas adalah versi standart jika  ingin membuat aplikasi Android, paling tidak ICS adalah hal yang paling dasar harus di setup jika kita menginginkan versi yang agak jadul.
+Versi Diatas adalah versi standart jika  ingin membuat aplikasi Android, paling tidak ICS adalah versi yang paling dasar harus di setup.
 
 # Referensi
 
