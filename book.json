@@ -1,27 +1,5 @@
 {
     "plugins": ["autocover"],
-    "pluginsConfig": {
-        "autocover": {
-            "title": "Membangun Aplikasi Android dengan Java",
-            "author": "Masyda Arrizaqu",
-            "pluginsConfig": {
-                "autocover": {
-                    "font": {
-                        "size": null,
-                        "family": "Impact",
-                        "color": "#ff0000"
-                    },
-                    "size": {
-                        "w": 1800,
-                        "h": 2360
-                    },
-                    "background": {
-                        "color": "#ff0000"
-                    }
-				}
-			}
-		}
-    },
 	"pdf": {
         "headerTemplate": "Header of the PDF with _TITLE_",
         "footerTemplate": "Footer HTML template. Available variables: _PAGENUM_, _TITLE_, _AUTHOR_ and _SECTION_."
