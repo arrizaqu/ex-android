@@ -1,6 +1,6 @@
 # Activity
 
-Sebutannya adalah Activity, merupakan sebuah class yang sudah secara default telah disediakan oleh Android. Activity merupakan Class yang dirancang untuk meng-handle atau berperan untuk menangani User Interface \(UI\) ketika UI tersebut dapat berinteraksi dengan Pengguna. untuk mengimplentasikan Activity dalam aplikasi yang sedang dibuat, maka Class tersebut harus meng-extends Activity class, seperti berikut :
+Secara Default Activity Class telah disediakan oleh Android. Activity merupakan Class yang dirancang untuk meng-handle atau berperan untuk menangani User Interface \(UI\) ketika UI tersebut dapat berinteraksi dengan Pengguna. untuk mengimplentasikan Activity dalam aplikasi yang sedang dibuat, maka Class tersebut harus meng-extends Activity class, seperti berikut :
 
 ```java
 public class MainActivity extends Activity {
@@ -25,15 +25,13 @@ Android Activity memiliki method - method dasar yang akan dijalankan ketika sebu
 6. _onStop\(\)_
 7. _onDestroy\(\)_
 
-Untuk siklus dari method Android Activity diatas dapat digambarkan sebagai berikut dibawah ini : 
+Untuk siklus dari method Android Activity diatas dapat digambarkan sebagai berikut dibawah ini :
 
 ![](/assets/1_BmgNxyQaWUflgZDK96i9cg.png)
 
-
-
 # Registrasi Activity
 
-Dalam membuat Activity baru hal yang tidak boleh lupa adalah mendaftarkan Java Class yang telah di set sebagai Activity di dalam File Manifest, seperti berikut : 
+Dalam membuat Activity baru hal yang tidak boleh lupa adalah mendaftarkan Java Class yang telah di set sebagai Activity di dalam File Manifest, seperti berikut :
 
 ```java
 <activity android:name=".HelloActivity" />
