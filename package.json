@@ -1,29 +1,26 @@
-{
-    "name": "gitbook-plugin-mytest",
-    "repository": {
-        "type": "git",
-        "url": "https://git.gitbook.com/rizaquelativa/java-android.git"
-    },
-    "version": "0.0.1",
-    "description": "This is my first GitBook plugin",
+{ 
+    "name": "gitbook-plugin-autocover",
+    "description": "Generate a cover for a gitbook",
     "engines": {
-        "gitbook": ">1.x.x"
-    },
-    "license": "UNLICENSED",
-    "gitbook": {
-        "properties": {
-            "myConfigKey": {
-                "type": "string",
-                "default": "it's the default value",
-                "description": "It defines my awesome config!"
-            }
-        }
+        "gitbook": ">=3.0.0"
     },
     "dependencies": {
-        "kerberos": "0.0.23",
-        "node-gyp": "^3.6.2",
-        "rebuild": "^0.1.2",
-        "return": "^1.0.0",
-        "socket.io": "^2.0.4"
+        "q": "^1.4.1",
+        "lodash": "^4.5.0",
+        "canvas": "1.3.15",
+        "canvg": "^0.0.8",
+        "geopattern": "1.2.3"
+    },
+     "devDependencies": {
+        "mocha": "2.3.3"
+    },
+    "homepage": "https://github.com/GitbookIO/plugin-autocover",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/GitbookIO/plugin-autocover.git"
+    },
+    "license": "Apache-2.0",
+    "bugs": {
+        "url": "https://github.com/GitbookIO/plugin-autocover/issues"
     }
 }
