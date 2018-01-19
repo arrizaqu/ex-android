@@ -15,7 +15,7 @@ public class MainActivity extends Activity {
 
 # Life Cycle Activity
 
-Android Activity memiliki method dasar
+Android Activity memiliki method - method dasar yang akan dijalankan ketika sebuah Activity dijalankan, sehingga ketika program harus memodifikasi method - method tersebut maka developer harus meng-override 
 
 ![](/assets/1_BmgNxyQaWUflgZDK96i9cg.png)
 
