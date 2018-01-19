@@ -1,6 +1,6 @@
 # Mengapa Harus Android ?
 
-Di zaman modern ini, istilah Android sudah menjadi hal yang biasa di tengah masyarakat sekarang, karena dimana pun kita selalu dihadapkan dengan koneksi yang tiada henti dengan smartphone dan selalu tidak terlepaskan dengan applikasi mobile baik aplikasi hiburan, transaksi jual beli, banking atau aplikasi lainnya yang sangat membantu aktivitas keseharian, terkhusus adalah Android Smartphone yang memang di masyarakat terutama di Indonesia sangat banyak penggunanya.
+Di zaman modern ini, istilah Android sudah menjadi hal yang biasa di tengah masyarakat sekarang, karena dimana pun kita selalu dihadapkan dengan koneksi yang tiada henti dengan smartphone dan selalu tidak terlepaskan dengan aplikasi mobile baik aplikasi hiburan, transaksi jual beli, banking atau aplikasi lainnya, dimana aplikasi tersebut  sangat membantu aktivitas keseharian, terkhusus adalah Android Smartphone yang memang di masyarakat terutama di Indonesia sangat banyak penggunanya.
 
 # Android Version
 
