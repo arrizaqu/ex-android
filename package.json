@@ -1,0 +1,29 @@
+{
+    "name": "gitbook-plugin-mytest",
+    "repository": {
+        "type": "git",
+        "url": "https://git.gitbook.com/rizaquelativa/java-android.git"
+    },
+    "version": "0.0.1",
+    "description": "This is my first GitBook plugin",
+    "engines": {
+        "gitbook": ">1.x.x"
+    },
+    "license": "UNLICENSED",
+    "gitbook": {
+        "properties": {
+            "myConfigKey": {
+                "type": "string",
+                "default": "it's the default value",
+                "description": "It defines my awesome config!"
+            }
+        }
+    },
+    "dependencies": {
+        "kerberos": "0.0.23",
+        "node-gyp": "^3.6.2",
+        "rebuild": "^0.1.2",
+        "return": "^1.0.0",
+        "socket.io": "^2.0.4"
+    }
+}
