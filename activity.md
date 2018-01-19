@@ -4,7 +4,13 @@ Sebutannya adalah Activity, merupakan sebuah class yang sudah secara default tel
 
 # Life Cycle Activity
 
-
-
 ![](/assets/1_BmgNxyQaWUflgZDK96i9cg.png)
+
+# Referensi 
+
+https://developer.android.com/reference/android/app/Activity.html
+
+
+
+
 
