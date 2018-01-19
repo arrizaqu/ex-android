@@ -6,3 +6,5 @@ Sebutannya adalah Activity, merupakan sebuah class yang sudah secara default tel
 
 
 
+![](/assets/1_BmgNxyQaWUflgZDK96i9cg.png)
+
