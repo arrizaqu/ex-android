@@ -2,7 +2,7 @@
 
 ## Materi
 
-* [Intro](readme.md)
+* [Introduction](readme.md)
 * [Activity](/activity.md)
 
 ## Lab
