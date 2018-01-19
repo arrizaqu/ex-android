@@ -4,13 +4,11 @@ Sebutannya adalah Activity, merupakan sebuah class yang sudah secara default tel
 
 # Life Cycle Activity
 
+Android Activity memiliki 
+
 ![](/assets/1_BmgNxyQaWUflgZDK96i9cg.png)
 
-# Referensi 
+# Referensi
 
-https://developer.android.com/reference/android/app/Activity.html
-
-
-
-
+[https://developer.android.com/reference/android/app/Activity.html](https://developer.android.com/reference/android/app/Activity.html)
 
