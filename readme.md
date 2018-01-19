@@ -4,7 +4,7 @@ Di zaman modern ini, istilah Android sudah menjadi hal yang biasa di tengah masy
 
 # Android Version
 
-Seperti halnya dalam penamaan dan versi Android yang di assign oleh google yang diketahui adalah terinpirasi dari nama kue manis, yang mana hal yang sama seperti penamaan versi software pada umumnya. birikut ini adalah nama dan versi yang sudah menjadi standart utama, yaitu :
+Seperti halnya dalam penamaan dan versi Android yang di assign oleh google yang diketahui adalah terinpirasi dari nama kue yang terlihat manis jika dimengkonsumsinya, berikut ini adalah nama dan versi yang sudah beredar dari munculnya Android OS yang pernah ada, diantaranya :
 
 **Oreo**
 
