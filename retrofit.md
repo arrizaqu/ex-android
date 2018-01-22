@@ -1,11 +1,32 @@
 # Retrofit
 
-Merupakan Library yang biasa digunakan untuk push atau get dari Request HTTP API, 
+Merupakan Library yang biasa digunakan untuk push atau get dari Request HTTP API,
 
-## Cara Menggunakan Library
+## Pembahasan 
 
-1. 
+1. Instalasi Retrofit 
+2. Contoh 
+3. Type Data Converter yang di Support
+
+## Instalasi Retrofit
+
+## Contoh
+
+## Type Data Converter yang di Support
+
+Converters can be added to support other types. Six sibling modules adapt popular serialization libraries for your convenience.
+
+* [Gson](https://github.com/google/gson) :`com.squareup.retrofit2:converter-gson`
+* [Jackson](http://wiki.fasterxml.com/JacksonHome) :`com.squareup.retrofit2:converter-jackson`
+* [Moshi](https://github.com/square/moshi/) :`com.squareup.retrofit2:converter-moshi`
+* [Protobuf](https://developers.google.com/protocol-buffers/) :`com.squareup.retrofit2:converter-protobuf`
+* [Wire](https://github.com/square/wire) :`com.squareup.retrofit2:converter-wire`
+* [Simple XML](http://simple.sourceforge.net/) :`com.squareup.retrofit2:converter-simplexml`
+* Scalars \(primitives, boxed, and String\):`com.squareup.retrofit2:converter-scalars`
+
 # Referensi
+
+
 
 [http://square.github.io/retrofit/](http://square.github.io/retrofit/)
 
