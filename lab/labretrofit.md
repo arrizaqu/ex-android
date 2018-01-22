@@ -1,8 +1,9 @@
 # Lab Retrofit
 
 1. Main Activity
-2. EndPoint API
-3. Post Example
+2. POJO Example
+3. EndPoint API
+4. Post Example
 
 ## MainActivity
 
