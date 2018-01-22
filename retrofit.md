@@ -78,7 +78,7 @@ public interface EndpointInterface {
 }
 ```
 
-dari contoh script diatas ada beberapa Annotasi yang penting di ketahui, hal ini jika terbiasa dengan Spring Framwork akan memudahkan untuk memahami, berikut adalah daftar istilah dari Annotation sebagai berikut :
+dari contoh script diatas ada beberapa Annotasi yang penting di ketahui, sebagai berikut :
 
 | Annotation | Description |
 | :--- | :--- |
