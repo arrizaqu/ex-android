@@ -48,7 +48,7 @@ compile 'com.squareup.okhttp3:okhttp:3.6.0'
 
 ## Type Data Converter yang di Support
 
-Converters can be added to support other types. Six sibling modules adapt popular serialization libraries for your convenience.
+Berikut ini adalah library yang di support dalam menggunakan Retrofit, diantaranya adalah : 
 
 * [Gson](https://github.com/google/gson) :`com.squareup.retrofit2:converter-gson`
 * [Jackson](http://wiki.fasterxml.com/JacksonHome) :`com.squareup.retrofit2:converter-jackson`
