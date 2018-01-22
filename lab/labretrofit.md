@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
 public interface InterfaceRequest {
     @GET("kelompok3-ws/list")
     Call<List<MateriEntity>> materies();
-    
+
     @POST("kelompok3-ws/save")
     Call<RequestBody> save(@Body RequestBody materiEntity);
 
@@ -73,10 +73,10 @@ public interface InterfaceRequest {
 
 ## Post Example
 
-
+#### Define JSON TYPE variable 
 
 ```
-
+ public static final MediaType JSON = MediaType.parse("application/json; charset=utf-8");
 ```
 
 
