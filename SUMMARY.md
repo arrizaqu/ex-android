@@ -2,8 +2,11 @@
 
 ## Materi
 * [Introduction](readme.md)
-* [Activity](activity.md)
+* [Activity](/activity.md)
+* [Retrofit](retrofit.md)
+* [Issue](issue.md)
 
 ## Lab
 * [LabActivity](lab/labactivity.md)
+* [LabRetrofit](lab/labretrofit.md)
 
