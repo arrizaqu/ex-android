@@ -136,3 +136,4 @@ public void getData(){
 
 [https://github.com/codepath/android\_guides/wiki/Consuming-APIs-with-Retrofit](https://github.com/codepath/android_guides/wiki/Consuming-APIs-with-Retrofit)
 
+{% set author = "Hao" %}
