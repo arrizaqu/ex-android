@@ -4,6 +4,7 @@
 
 * [Introduction](readme.md)
 * [Activity](/activity.md)
+* [Retrofit](retrofit.md)
 
 ## Lab
 
