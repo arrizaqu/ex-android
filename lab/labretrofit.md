@@ -59,6 +59,22 @@ public class MainActivity extends AppCompatActivity {
 }
 ```
 
+## POJO Example
+
+```java
+public class MateriEntity {
+
+    String jamPesan;
+    String confirmJamPesan;
+    String statusConfirm;
+    String atasNamaPemabayaran;
+    int idTrayek;
+    int idPemesan;
+    
+    ... setter and getter
+}
+```
+
 ## EndPoint API
 
 ```java
