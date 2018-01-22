@@ -73,9 +73,11 @@ public interface InterfaceRequest {
 
 ## Post Example
 
-#### Define JSON TYPE variable 
+* Define JSON TYPE variable
+* 
+#### Define JSON TYPE variable
 
-```
+```java
  public static final MediaType JSON = MediaType.parse("application/json; charset=utf-8");
 ```
 
