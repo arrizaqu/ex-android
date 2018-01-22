@@ -25,9 +25,9 @@ Merupakan Library yang biasa digunakan untuk push atau get dari Request HTTP API
 
    ```java
    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+   compile 'com.squareup.retrofit2:converter-gson:2.3.0'
+   compile 'com.squareup.okhttp3:okhttp:3.6.0'
    ```
-
-
 
 ## Contoh
 
