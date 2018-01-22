@@ -9,7 +9,8 @@ Merupakan Library yang biasa digunakan untuk push atau get dari Request HTTP API
 3. Mendefinisikan RequestInterfaceMethod
 4. GET Example
 5. POST Example
-6. Issue
+6. PUT Example
+7. Issue
 
 ## Instalasi Retrofit
 
