@@ -10,22 +10,22 @@ Merupakan Library yang biasa digunakan untuk push atau get dari Request HTTP API
 
 ## Instalasi Retrofit
 
-1. Masukkan dalam Dependency Library 
-   1. Maven
+1. Masukkan dalam Dependency Library   
+    Maven
 
    ```java
    <dependency>
      <groupId>com.squareup.retrofit2</groupId>
      <artifactId>retrofit</artifactId>
      <version>2.3.0</version>
-   </dependency> 
+   </dependency>
    ```
 
-   1. Gradle 
-
+   Gradle 
    ```java
    compile 'com.squareup.retrofit2:retrofit:2.3.0'
    ```
+
 2. fasdf
 
 ## Contoh
