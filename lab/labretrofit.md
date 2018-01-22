@@ -74,11 +74,40 @@ public interface InterfaceRequest {
 ## Post Example
 
 * Define JSON TYPE variable
+* Prepare Json Object Data
 * 
 #### Define JSON TYPE variable
 
 ```java
  public static final MediaType JSON = MediaType.parse("application/json; charset=utf-8");
+```
+
+Prepare Json Object Data
+
+```java
+ public void exampleInsertData(JSONObject entity) throws IOException {
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl("https://batch131.herokuapp.com/")
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+
+        final InterfaceRequest requests = retrofit.create(InterfaceRequest.class);
+        Log.d("ss", entity.toString());
+        RequestBody requestBody = RequestBody.create(JSON, entity.toString());
+        Call<RequestBody> call = requests.save(requestBody);
+        call.enqueue(new Callback<RequestBody>() {
+
+            @Override
+            public void onResponse(Call<RequestBody> call, Response<RequestBody> response) {
+
+            }
+
+            @Override
+            public void onFailure(Call<RequestBody> call, Throwable t) {
+
+            }
+        });
+    }
 ```
 
 
