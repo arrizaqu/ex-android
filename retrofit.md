@@ -91,6 +91,39 @@ dari contoh script diatas ada beberapa Annotasi yang penting di ketahui, sebagai
 | `@Body` | payload for the POST call \(serialized from a Java object to a JSON string\) |
 | `@Header` | specifies the header with the value of the annotated parameter |
 
+## GET Example 
+
+```java
+public void getData(){
+        Gson gson = new GsonBuilder()
+                .setDateFormat("yyyy-MM-dd'T'HH:mm:ssZ")
+                .create();
+
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl("https://batch131.herokuapp.com/")
+                .addConverterFactory(GsonConverterFactory.create(gson))
+                .build();
+
+        final InterfaceRequest requests = retrofit.create(InterfaceRequest.class);
+        Call<List<MateriEntity>> mycall = requests.materies();
+        mycall.enqueue(new Callback<List<MateriEntity>>() {
+            @Override
+            public void onResponse(Call<List<MateriEntity>> call, Response<List<MateriEntity>> response) {
+                int code = response.code();
+                List<MateriEntity> listMateri = response.body();
+                for(MateriEntity entity : listMateri){
+                    Log.d("result : ", "idTrayek : "+ entity.getIdTrayek());
+                }
+            }
+
+            @Override
+            public void onFailure(Call<List<MateriEntity>> call, Throwable t) {
+
+            }
+        });
+    }
+```
+
 # Issue
 
 1. GsonConverterFactory Cannot be resolve \(Solved\) : [https://stackoverflow.com/questions/33304420/retrofit-2-example-tutorial-but-gsonconverterfactory-display-error-cannot-resol](https://www.gitbook.com/book/rizaquelativa/java-android/edit#), \(Library ini dipakai untuk mengconvert Json Format ke Object di dalam java object\)
