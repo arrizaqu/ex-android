@@ -6,6 +6,7 @@ Merupakan Library yang biasa digunakan untuk push atau get dari Request HTTP API
 
 1. Instalasi Retrofit
 2. Type Data Converter yang di support
+3. Issue
 
 ## Instalasi Retrofit
 
@@ -55,6 +56,11 @@ Converters can be added to support other types. Six sibling modules adapt popula
 * [Wire](https://github.com/square/wire) :`com.squareup.retrofit2:converter-wire`
 * [Simple XML](http://simple.sourceforge.net/) :`com.squareup.retrofit2:converter-simplexml`
 * Scalars \(primitives, boxed, and String\):`com.squareup.retrofit2:converter-scalars`
+
+# Issue
+
+1. GsonConverterFactory Cannot be resolve \(Solved\) : [https://stackoverflow.com/questions/33304420/retrofit-2-example-tutorial-but-gsonconverterfactory-display-error-cannot-resol](https://www.gitbook.com/book/rizaquelativa/java-android/edit#)
+2. Unable to create converter for java.util.List Retrofit: [https://stackoverflow.com/questions/34315499/unable-to-create-converter-for-java-util-list-retrofit-2-0-0-beta2](https://stackoverflow.com/questions/34315499/unable-to-create-converter-for-java-util-list-retrofit-2-0-0-beta2) 
 
 # Referensi
 
