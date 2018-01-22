@@ -60,7 +60,7 @@ Converters can be added to support other types. Six sibling modules adapt popula
 
 ## Mendefinisikan RequestInterfaceMethod
 
-Memahami untuk InterfaceEndpoint API seperti contoh script diberikut : 
+Memahami untuk InterfaceEndpoint API seperti contoh script diberikut :
 
 ```java
 public interface EndpointInterface {
@@ -76,7 +76,21 @@ public interface EndpointInterface {
     @POST("users/new")
     Call<User> createUser(@Body User user);
 }
+
 ```
+
+dari contoh script diatas ada beberap Annotasi yang penting di ketahui, hal ini jika terbiasa dengan Spring Framwork akan memudahkan untuk memahami, berikut adalah daftar istilah dari Annotation sebagai berikut : 
+
+| Annotation |
+| :--- |
+
+
+|  | Description |
+| :--- | :--- |
+| `@Path` | variable substitution for the API endpoint \(i.e. username will be swapped for`{username}`in the URL endpoint\). |
+| `@Query` | specifies the query key name with the value of the annotated parameter. |
+| `@Body` | payload for the POST call \(serialized from a Java object to a JSON string\) |
+| `@Header` | specifies the header with the value of the annotated parameter |
 
 # Issue
 
