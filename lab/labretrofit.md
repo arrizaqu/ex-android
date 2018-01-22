@@ -59,5 +59,13 @@ public class MainActivity extends AppCompatActivity {
 
 ## EndPoint API
 
+```java
+public interface InterfaceRequest {
+    @GET("kelompok3-ws/list")
+    Call<List<MateriEntity>> materies();
+
+}
+```
+
 
 
