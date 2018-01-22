@@ -10,7 +10,8 @@ Merupakan Library yang biasa digunakan untuk push atau get dari Request HTTP API
 4. GET Example
 5. POST Example
 6. PUT Example
-7. Issue
+7. Mengirimkan Gambar atau File
+8. Issue
 
 ## Instalasi Retrofit
 
