@@ -10,24 +10,27 @@ Merupakan Library yang biasa digunakan untuk push atau get dari Request HTTP API
 
 ## Instalasi Retrofit
 
-1. Masukkan dalam Dependency Library  
-    Maven
+1. Untuk Praktek pada pembahasan membutuhkan 3 library dalam penggunaan get data json menggunakan Retrofit, yaitu
 
-   ```java
-   <dependency>
-     <groupId>com.squareup.retrofit2</groupId>
-     <artifactId>retrofit</artifactId>
-     <version>2.3.0</version>
-   </dependency>
-   ```
+* Retrotit
+* Converter-Gson
+* Okhttp
 
-   Gradle
+```java
+<dependency>
+  <groupId>com.squareup.retrofit2</groupId>
+  <artifactId>retrofit</artifactId>
+  <version>2.3.0</version>
+</dependency>
+```
 
-   ```java
-   compile 'com.squareup.retrofit2:retrofit:2.3.0'
-   compile 'com.squareup.retrofit2:converter-gson:2.3.0'
-   compile 'com.squareup.okhttp3:okhttp:3.6.0'
-   ```
+Gradle
+
+```java
+compile 'com.squareup.retrofit2:retrofit:2.3.0'
+compile 'com.squareup.retrofit2:converter-gson:2.3.0'
+compile 'com.squareup.okhttp3:okhttp:3.6.0'
+```
 
 ## Contoh
 
