@@ -60,6 +60,8 @@ Converters can be added to support other types. Six sibling modules adapt popula
 
 ## Mendefinisikan RequestInterfaceMethod
 
+Memahami untuk InterfaceEndpoint API seperti contoh script diberikut : 
+
 ```java
 public interface EndpointInterface {
     // Request method and URL specified in the annotation
