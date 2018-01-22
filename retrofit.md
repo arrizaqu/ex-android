@@ -12,9 +12,12 @@ Merupakan Library yang biasa digunakan untuk push atau get dari Request HTTP API
 
 1. Untuk Praktek pada pembahasan membutuhkan 3 library dalam penggunaan get data json menggunakan Retrofit, yaitu
 
-* Retrotit
-* Converter-Gson
-* Okhttp
+2. Retrotit
+
+3. Converter-Gson
+4. Okhttp
+
+Maven
 
 ```java
 <dependency>
