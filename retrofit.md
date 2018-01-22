@@ -76,16 +76,11 @@ public interface EndpointInterface {
     @POST("users/new")
     Call<User> createUser(@Body User user);
 }
-
 ```
 
-dari contoh script diatas ada beberap Annotasi yang penting di ketahui, hal ini jika terbiasa dengan Spring Framwork akan memudahkan untuk memahami, berikut adalah daftar istilah dari Annotation sebagai berikut : 
+dari contoh script diatas ada beberap Annotasi yang penting di ketahui, hal ini jika terbiasa dengan Spring Framwork akan memudahkan untuk memahami, berikut adalah daftar istilah dari Annotation sebagai berikut :
 
-| Annotation |
-| :--- |
-
-
-|  | Description |
+| Annotation | Description |
 | :--- | :--- |
 | `@Path` | variable substitution for the API endpoint \(i.e. username will be swapped for`{username}`in the URL endpoint\). |
 | `@Query` | specifies the query key name with the value of the annotated parameter. |
