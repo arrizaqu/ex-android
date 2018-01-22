@@ -58,6 +58,24 @@ Converters can be added to support other types. Six sibling modules adapt popula
 * [Simple XML](http://simple.sourceforge.net/) :`com.squareup.retrofit2:converter-simplexml`
 * Scalars \(primitives, boxed, and String\):`com.squareup.retrofit2:converter-scalars`
 
+## Mendefinisikan RequestInterfaceMethod 
+
+```
+public interface EndpointInterface {
+    // Request method and URL specified in the annotation
+    // Callback for the parsed response is the last parameter
+
+    @GET("users/{username}")
+    Call<User> getUser(@Path("username") String username);
+
+    @GET("group/{id}/users")
+    Call<List<User>> groupList(@Path("id") int groupId, @Query("sort") String sort);
+
+    @POST("users/new")
+    Call<User> createUser(@Body User user);
+}
+```
+
 # Issue
 
 1. GsonConverterFactory Cannot be resolve \(Solved\) : [https://stackoverflow.com/questions/33304420/retrofit-2-example-tutorial-but-gsonconverterfactory-display-error-cannot-resol](https://www.gitbook.com/book/rizaquelativa/java-android/edit#), \(Library ini dipakai untuk mengconvert Json Format ke Object di dalam java object\)
