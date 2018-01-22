@@ -75,14 +75,14 @@ public interface InterfaceRequest {
 
 * Define JSON TYPE variable
 * Prepare Json Object Data
-* 
+
 #### Define JSON TYPE variable
 
 ```java
  public static final MediaType JSON = MediaType.parse("application/json; charset=utf-8");
 ```
 
-Prepare Json Object Data
+#### Prepare Json Object Data
 
 ```java
  public void exampleInsertData(JSONObject entity) throws IOException {
