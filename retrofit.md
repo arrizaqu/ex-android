@@ -10,7 +10,7 @@ Merupakan Library yang biasa digunakan untuk push atau get dari Request HTTP API
 
 ## Instalasi Retrofit
 
-Untuk Praktek pada pembahasan membutuhkan 3 library dalam penggunaan get data json menggunakan Retrofit, yaitu : 
+Untuk Praktek pada pembahasan membutuhkan 3 library dalam penggunaan get data json menggunakan Retrofit, yaitu :
 
 1. Retrofit
 2. Converter Gson
@@ -35,8 +35,6 @@ Untuk Praktek pada pembahasan membutuhkan 3 library dalam penggunaan get data js
     <artifactId>okhttp</artifactId>
     <version>2.7.5</version>
 </dependency>
-
-
 ```
 
 #### Gradle
