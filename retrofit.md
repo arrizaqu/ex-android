@@ -6,7 +6,8 @@ Merupakan Library yang biasa digunakan untuk push atau get dari Request HTTP API
 
 1. Instalasi Retrofit
 2. Type Data Converter yang di support
-3. Issue
+3. Mendefinisikan RequestInterfaceMethod
+4. Issue
 
 ## Instalasi Retrofit
 
@@ -68,6 +69,4 @@ Converters can be added to support other types. Six sibling modules adapt popula
 [http://square.github.io/retrofit/](http://square.github.io/retrofit/)
 
 [https://github.com/codepath/android\_guides/wiki/Consuming-APIs-with-Retrofit](https://github.com/codepath/android_guides/wiki/Consuming-APIs-with-Retrofit)
-
-
 
