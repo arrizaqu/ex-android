@@ -2,13 +2,31 @@
 
 Merupakan Library yang biasa digunakan untuk push atau get dari Request HTTP API,
 
-## Pembahasan 
+## Pembahasan
 
 1. Instalasi Retrofit 
 2. Contoh 
 3. Type Data Converter yang di Support
 
 ## Instalasi Retrofit
+
+1. Masukkan dalam Dependency Library 
+   1. Maven
+
+   ```java
+   <dependency>
+     <groupId>com.squareup.retrofit2</groupId>
+     <artifactId>retrofit</artifactId>
+     <version>2.3.0</version>
+   </dependency> 
+   ```
+
+   1. Gradle 
+
+   ```java
+   compile 'com.squareup.retrofit2:retrofit:2.3.0'
+   ```
+2. fasdf
 
 ## Contoh
 
@@ -25,8 +43,6 @@ Converters can be added to support other types. Six sibling modules adapt popula
 * Scalars \(primitives, boxed, and String\):`com.squareup.retrofit2:converter-scalars`
 
 # Referensi
-
-
 
 [http://square.github.io/retrofit/](http://square.github.io/retrofit/)
 
