@@ -7,7 +7,9 @@ Merupakan Library yang biasa digunakan untuk push atau get dari Request HTTP API
 1. Instalasi Retrofit
 2. Type Data Converter yang di support
 3. Mendefinisikan RequestInterfaceMethod
-4. Issue
+4. GET Example
+5. POST Example
+6. Issue
 
 ## Instalasi Retrofit
 
@@ -48,7 +50,7 @@ compile 'com.squareup.okhttp3:okhttp:3.6.0'
 
 ## Type Data Converter yang di Support
 
-Berikut ini adalah library yang di support dalam menggunakan Retrofit, diantaranya adalah : 
+Berikut ini adalah library yang di support dalam menggunakan Retrofit, diantaranya adalah :
 
 * [Gson](https://github.com/google/gson) :`com.squareup.retrofit2:converter-gson`
 * [Jackson](http://wiki.fasterxml.com/JacksonHome) :`com.squareup.retrofit2:converter-jackson`
