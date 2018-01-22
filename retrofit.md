@@ -10,7 +10,7 @@ Merupakan Library yang biasa digunakan untuk push atau get dari Request HTTP API
 
 ## Instalasi Retrofit
 
-1. Masukkan dalam Dependency Library   
+1. Masukkan dalam Dependency Library  
     Maven
 
    ```java
@@ -21,12 +21,13 @@ Merupakan Library yang biasa digunakan untuk push atau get dari Request HTTP API
    </dependency>
    ```
 
-   Gradle 
+   Gradle
+
    ```java
    compile 'com.squareup.retrofit2:retrofit:2.3.0'
    ```
 
-2. fasdf
+
 
 ## Contoh
 
