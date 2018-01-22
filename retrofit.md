@@ -1,12 +1,11 @@
 # Retrofit
 
-Merupakan Library yang biasa digunakan untuk push atau get dari Request HTTP API
+Merupakan Library yang biasa digunakan untuk push atau get dari Request HTTP API, 
 
-# Referensi 
+## Cara Menggunakan Library
 
-http://square.github.io/retrofit/
+1. 
+# Referensi
 
-
-
-
+[http://square.github.io/retrofit/](http://square.github.io/retrofit/)
 
