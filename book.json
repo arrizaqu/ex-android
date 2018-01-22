@@ -1,24 +1,10 @@
 {
     "plugins": [
-        "page-footer"
-    ],
-    "pluginsConfig": {
-        "page-footer": {
-            "description": "Handbook Android Programming",
-            "signature": "Masyda Arrizaqu",
-            "wisdom": "begin from Hello world",
-            "format": "yyyy-MM-dd hh:mm:ss",
-            "copyright": "Copyright &#169; arrizaqu",
-            "timeColor": "#666",
-            "copyrightColor": "#666",
-            "utcOffset": "8",
-            "isShowQRCode": true,
-            "baseUri": "https://aleen42.gitbooks.io/personalwiki/content/",
-                        "isShowIssues": true,
-            "repo": "aleen42/PersonalWiki",
-            "issueNum": "8",
-            "token": "",
-                        "style": "normal"
-        }
+    "footer"
+  ],
+  "pluginsConfig": {
+    "layout": {
+      "footerPath" : "layouts/footer.html"
     }
+  }
 }
