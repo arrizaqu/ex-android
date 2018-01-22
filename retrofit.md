@@ -58,9 +58,9 @@ Converters can be added to support other types. Six sibling modules adapt popula
 * [Simple XML](http://simple.sourceforge.net/) :`com.squareup.retrofit2:converter-simplexml`
 * Scalars \(primitives, boxed, and String\):`com.squareup.retrofit2:converter-scalars`
 
-## Mendefinisikan RequestInterfaceMethod 
+## Mendefinisikan RequestInterfaceMethod
 
-```
+```java
 public interface EndpointInterface {
     // Request method and URL specified in the annotation
     // Callback for the parsed response is the last parameter
