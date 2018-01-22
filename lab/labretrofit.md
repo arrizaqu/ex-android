@@ -1,7 +1,7 @@
 # Lab Retrofit
 
 1. Main Activity
-2. asdfsdf
+2. EndPoint API
 
 ### MainActivity
 
