@@ -4,9 +4,8 @@ Merupakan Library yang biasa digunakan untuk push atau get dari Request HTTP API
 
 ## Pembahasan
 
-1. Instalasi Retrofit 
-2. Contoh 
-3. Type Data Converter yang di Support
+1. Instalasi Retrofit
+2. Type Data Converter yang di support
 
 ## Instalasi Retrofit
 
@@ -44,8 +43,6 @@ compile 'com.squareup.retrofit2:retrofit:2.3.0'
 compile 'com.squareup.retrofit2:converter-gson:2.3.0'
 compile 'com.squareup.okhttp3:okhttp:3.6.0'
 ```
-
-## Contoh
 
 ## Type Data Converter yang di Support
 
