@@ -1,8 +1,7 @@
 # Lab Retrofit
 
 1. Main Activity
-2. fsdf
-
+2. 
 ### MainActivity
 
 ```java
