@@ -86,29 +86,15 @@ public interface InterfaceRequest {
 #### Prepare Json Object Data
 
 ```java
- public void exampleInsertData(JSONObject entity) throws IOException {
-        Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://batch131.herokuapp.com/")
-                .addConverterFactory(GsonConverterFactory.create())
-                .build();
-
-        final InterfaceRequest requests = retrofit.create(InterfaceRequest.class);
-        Log.d("ss", entity.toString());
-        RequestBody requestBody = RequestBody.create(JSON, entity.toString());
-        Call<RequestBody> call = requests.save(requestBody);
-        call.enqueue(new Callback<RequestBody>() {
-
-            @Override
-            public void onResponse(Call<RequestBody> call, Response<RequestBody> response) {
-
-            }
-
-            @Override
-            public void onFailure(Call<RequestBody> call, Throwable t) {
-
-            }
-        });
-    }
+try{
+    JSONObject jsonObject = new JSONObject();
+    jsonObject.put("codePesan", "bsik123");
+    jsonObject.put("idTrayek", 56789);
+   // jsonObject.put("statusConfirm", "pending");
+    exampleInsertData(jsonObject);
+} catch(Exception e){
+    e.printStackTrace();
+}
 ```
 
 
