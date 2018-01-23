@@ -130,7 +130,25 @@ public void getData(){
 
 ## Post Example
 
+```java
+ final InterfaceRequest requests = retrofit.create(InterfaceRequest.class);
+        Log.d("ss", entity.toString());
+        RequestBody requestBody = RequestBody.create(JSON, entity.toString());
+        Call<RequestBody> call = requests.save(requestBody);
+        call.enqueue(new Callback<RequestBody>() {
 
+            @Override
+            public void onResponse(Call<RequestBody> call, Response<RequestBody> response) {
+
+            }
+
+            @Override
+            public void onFailure(Call<RequestBody> call, Throwable t) {
+
+            }
+        });
+    }
+```
 
 # Issue
 
