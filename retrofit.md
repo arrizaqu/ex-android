@@ -128,6 +128,28 @@ public void getData(){
     }
 ```
 
+## Post Example
+
+```java
+ final InterfaceRequest requests = retrofit.create(InterfaceRequest.class);
+        Log.d("ss", entity.toString());
+        RequestBody requestBody = RequestBody.create(JSON, entity.toString());
+        Call<RequestBody> call = requests.save(requestBody);
+        call.enqueue(new Callback<RequestBody>() {
+
+            @Override
+            public void onResponse(Call<RequestBody> call, Response<RequestBody> response) {
+
+            }
+
+            @Override
+            public void onFailure(Call<RequestBody> call, Throwable t) {
+
+            }
+        });
+    }
+```
+
 # Issue
 
 1. GsonConverterFactory Cannot be resolve \(Solved\) : [https://stackoverflow.com/questions/33304420/retrofit-2-example-tutorial-but-gsonconverterfactory-display-error-cannot-resol](https://www.gitbook.com/book/rizaquelativa/java-android/edit#), \(Library ini dipakai untuk mengconvert Json Format ke Object di dalam java object\)
