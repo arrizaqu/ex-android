@@ -4,10 +4,6 @@ Merupakan Library yang biasa digunakan untuk push atau get dari Request HTTP API
 
 ## Pembahasan
 
-
-
-
-
 1. Instalasi Retrofit
 2. Type Data Converter yang di support
 3. Mendefinisikan RequestInterfaceMethod
@@ -95,7 +91,7 @@ dari contoh script diatas ada beberapa Annotasi yang penting di ketahui, sebagai
 | `@Body` | payload for the POST call \(serialized from a Java object to a JSON string\) |
 | `@Header` | specifies the header with the value of the annotated parameter |
 
-## GET Example 
+## GET Example
 
 ```java
 public void getData(){
@@ -139,3 +135,6 @@ public void getData(){
 [http://square.github.io/retrofit/](http://square.github.io/retrofit/)
 
 [https://github.com/codepath/android\_guides/wiki/Consuming-APIs-with-Retrofit](https://github.com/codepath/android_guides/wiki/Consuming-APIs-with-Retrofit)
+
+{ set author  = "masyda arrizaqu"}
+
