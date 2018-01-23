@@ -1,4 +1,12 @@
 {
+	"title": "Building App with Java Android",
+	"description": "build app android with java",
+	"author": "Masyda Arrizaqu",
+	"gitbook": ">= 3.0.0",
+	"structure": {
+		"summary": "SUMMARY.md",
+		"readme":"README.md"
+	},
 	"plugins": ["signature"],
 	"pluginsConfig": {
       "gitbook-plugin-signature":{
@@ -15,5 +23,5 @@
             "key": "customized signature"
           }
       }
-}
+	}
 }

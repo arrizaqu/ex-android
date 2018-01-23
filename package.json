@@ -1,4 +1,11 @@
 {
+  "scripts": {
+    "docs:prepare": "gitbook install",
+    "docs:watch": "npm run docs:prepare && gitbook serve",
+    "docs:generate-epub": "gitbook epub ./ ./_book/mybook.epub",
+    "docs:generate-pdf": "gitbook pdf ./ ./_book/mybook.pdf",
+    "docs:generate": "gitbook build && npm run docs:generate-epub && npm run docs:generate-pdf"
+  },
   "dependencies": {
     "bcrypt": "^1.0.3",
     "gitbook-plugin-footer": "0.0.6",
