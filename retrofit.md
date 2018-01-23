@@ -1,7 +1,7 @@
 ---
 description: written by masyda arrizaqu
 ---
-
+{% set author = "Masyda Arrizaqu" %}
 # Retrofit
 
 Merupakan Library yang biasa digunakan untuk push atau get dari Request HTTP API,
