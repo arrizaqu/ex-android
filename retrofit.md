@@ -1,5 +1,5 @@
 ---
-author: Masyda Arrizaqu
+Author: Masyda Arrizaqu
 ---
 
 # Retrofit
