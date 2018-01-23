@@ -4,6 +4,10 @@ Merupakan Library yang biasa digunakan untuk push atau get dari Request HTTP API
 
 ## Pembahasan
 
+
+
+
+
 1. Instalasi Retrofit
 2. Type Data Converter yang di support
 3. Mendefinisikan RequestInterfaceMethod
