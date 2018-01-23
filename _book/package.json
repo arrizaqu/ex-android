@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "bcrypt": "^1.0.3",
+    "gitbook-plugin-footer": "0.0.6",
+    "gitbook-plugin-signature": "^1.5.2",
+    "gtk": "0.0.1",
+    "node-gyp": "^3.6.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/username/repository.git"
+  }
+}

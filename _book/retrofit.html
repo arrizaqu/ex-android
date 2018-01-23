@@ -1,0 +1,446 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Retrofit · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="written by masyda arrizaqu">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="issue.html" />
+    
+    
+    <link rel="prev" href="activity.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Materi</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="activity.html">
+            
+                <a href="activity.html">
+            
+                    
+                    Activity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3" data-path="retrofit.html">
+            
+                <a href="retrofit.html">
+            
+                    
+                    Retrofit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="issue.html">
+            
+                <a href="issue.html">
+            
+                    
+                    Issue
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Lab</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="lab/labactivity.html">
+            
+                <a href="lab/labactivity.html">
+            
+                    
+                    LabActivity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="lab/labretrofit.html">
+            
+                <a href="lab/labretrofit.html">
+            
+                    
+                    LabRetrofit
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Retrofit</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>{ <span style="color:gray">last modified by , 2018/01/23 08:52:10</span></p>
+<p>% set author = &quot;Masyda Arrizaqu&quot; %}</p>
+<h1 id="retrofit">Retrofit</h1>
+<p>Merupakan Library yang biasa digunakan untuk push atau get dari Request HTTP API,</p>
+<h2 id="pembahasan">Pembahasan</h2>
+<ol>
+<li>Instalasi Retrofit</li>
+<li>Type Data Converter yang di support</li>
+<li>Mendefinisikan RequestInterfaceMethod</li>
+<li>GET Example</li>
+<li>POST Example</li>
+<li>PUT Example</li>
+<li>Mengirimkan Gambar atau File</li>
+<li>Issue</li>
+</ol>
+<h2 id="instalasi-retrofit">Instalasi Retrofit</h2>
+<p>Untuk Praktek pada pembahasan membutuhkan 3 library dalam penggunaan get data json menggunakan Retrofit, yaitu :</p>
+<ol>
+<li>Retrofit</li>
+<li>Converter Gson</li>
+<li>OkHttp</li>
+</ol>
+<h4 id="maven">Maven</h4>
+<pre><code class="lang-java">&lt;dependency&gt;
+  &lt;groupId&gt;com.squareup.retrofit2&lt;/groupId&gt;
+  &lt;artifactId&gt;retrofit&lt;/artifactId&gt;
+  &lt;version&gt;2.3.0&lt;/version&gt;
+&lt;/dependency&gt;
+&lt;dependency&gt;
+  &lt;groupId&gt;com.google.code.gson&lt;/groupId&gt;
+  &lt;artifactId&gt;gson&lt;/artifactId&gt;
+  &lt;version&gt;2.8.2&lt;/version&gt;
+&lt;/dependency&gt;
+&lt;!-- https://mvnrepository.com/artifact/com.squareup.okhttp/okhttp --&gt;
+&lt;dependency&gt;
+    &lt;groupId&gt;com.squareup.okhttp&lt;/groupId&gt;
+    &lt;artifactId&gt;okhttp&lt;/artifactId&gt;
+    &lt;version&gt;2.7.5&lt;/version&gt;
+&lt;/dependency&gt;
+</code></pre>
+<h4 id="gradle">Gradle</h4>
+<pre><code class="lang-java">compile <span class="hljs-string">&apos;com.squareup.retrofit2:retrofit:2.3.0&apos;</span>
+compile <span class="hljs-string">&apos;com.squareup.retrofit2:converter-gson:2.3.0&apos;</span>
+compile <span class="hljs-string">&apos;com.squareup.okhttp3:okhttp:3.6.0&apos;</span>
+</code></pre>
+<h2 id="type-data-converter-yang-di-support">Type Data Converter yang di Support</h2>
+<p>Berikut ini adalah library yang di support dalam menggunakan Retrofit, diantaranya adalah :</p>
+<ul>
+<li><a href="https://github.com/google/gson" target="_blank">Gson</a> :<code>com.squareup.retrofit2:converter-gson</code></li>
+<li><a href="http://wiki.fasterxml.com/JacksonHome" target="_blank">Jackson</a> :<code>com.squareup.retrofit2:converter-jackson</code></li>
+<li><a href="https://github.com/square/moshi/" target="_blank">Moshi</a> :<code>com.squareup.retrofit2:converter-moshi</code></li>
+<li><a href="https://developers.google.com/protocol-buffers/" target="_blank">Protobuf</a> :<code>com.squareup.retrofit2:converter-protobuf</code></li>
+<li><a href="https://github.com/square/wire" target="_blank">Wire</a> :<code>com.squareup.retrofit2:converter-wire</code></li>
+<li><a href="http://simple.sourceforge.net/" target="_blank">Simple XML</a> :<code>com.squareup.retrofit2:converter-simplexml</code></li>
+<li>Scalars (primitives, boxed, and String):<code>com.squareup.retrofit2:converter-scalars</code></li>
+</ul>
+<h2 id="mendefinisikan-requestinterfacemethod">Mendefinisikan RequestInterfaceMethod</h2>
+<p>Memahami untuk InterfaceEndpoint API seperti contoh script diberikut :</p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">EndpointInterface</span> </span>{
+    <span class="hljs-comment">// Request method and URL specified in the annotation</span>
+    <span class="hljs-comment">// Callback for the parsed response is the last parameter</span>
+
+    <span class="hljs-meta">@GET</span>(<span class="hljs-string">&quot;users/{username}&quot;</span>)
+    <span class="hljs-function">Call&lt;User&gt; <span class="hljs-title">getUser</span><span class="hljs-params">(@Path(<span class="hljs-string">&quot;username&quot;</span>)</span> String username)</span>;
+
+    <span class="hljs-meta">@GET</span>(<span class="hljs-string">&quot;group/{id}/users&quot;</span>)
+    Call&lt;List&lt;User&gt;&gt; groupList(<span class="hljs-meta">@Path</span>(<span class="hljs-string">&quot;id&quot;</span>) <span class="hljs-keyword">int</span> groupId, <span class="hljs-meta">@Query</span>(<span class="hljs-string">&quot;sort&quot;</span>) String sort);
+
+    <span class="hljs-meta">@POST</span>(<span class="hljs-string">&quot;users/new&quot;</span>)
+    <span class="hljs-function">Call&lt;User&gt; <span class="hljs-title">createUser</span><span class="hljs-params">(@Body User user)</span></span>;
+}
+</code></pre>
+<p>dari contoh script diatas ada beberapa Annotasi yang penting di ketahui, sebagai berikut :</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Annotation</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>@Path</code></td>
+<td style="text-align:left">variable substitution for the API endpoint (i.e. username will be swapped for<code>{username}</code>in the URL endpoint).</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>@Query</code></td>
+<td style="text-align:left">specifies the query key name with the value of the annotated parameter.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>@Body</code></td>
+<td style="text-align:left">payload for the POST call (serialized from a Java object to a JSON string)</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>@Header</code></td>
+<td style="text-align:left">specifies the header with the value of the annotated parameter</td>
+</tr>
+</tbody>
+</table>
+<h2 id="get-example">GET Example</h2>
+<pre><code class="lang-java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">getData</span><span class="hljs-params">()</span></span>{
+        Gson gson = <span class="hljs-keyword">new</span> GsonBuilder()
+                .setDateFormat(<span class="hljs-string">&quot;yyyy-MM-dd&apos;T&apos;HH:mm:ssZ&quot;</span>)
+                .create();
+
+        Retrofit retrofit = <span class="hljs-keyword">new</span> Retrofit.Builder()
+                .baseUrl(<span class="hljs-string">&quot;https://batch131.herokuapp.com/&quot;</span>)
+                .addConverterFactory(GsonConverterFactory.create(gson))
+                .build();
+
+        <span class="hljs-keyword">final</span> InterfaceRequest requests = retrofit.create(InterfaceRequest.class);
+        Call&lt;List&lt;MateriEntity&gt;&gt; mycall = requests.materies();
+        mycall.enqueue(<span class="hljs-keyword">new</span> Callback&lt;List&lt;MateriEntity&gt;&gt;() {
+            <span class="hljs-meta">@Override</span>
+            <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onResponse</span><span class="hljs-params">(Call&lt;List&lt;MateriEntity&gt;&gt; call, Response&lt;List&lt;MateriEntity&gt;&gt; response)</span> </span>{
+                <span class="hljs-keyword">int</span> code = response.code();
+                List&lt;MateriEntity&gt; listMateri = response.body();
+                <span class="hljs-keyword">for</span>(MateriEntity entity : listMateri){
+                    Log.d(<span class="hljs-string">&quot;result : &quot;</span>, <span class="hljs-string">&quot;idTrayek : &quot;</span>+ entity.getIdTrayek());
+                }
+            }
+
+            <span class="hljs-meta">@Override</span>
+            <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onFailure</span><span class="hljs-params">(Call&lt;List&lt;MateriEntity&gt;&gt; call, Throwable t)</span> </span>{
+
+            }
+        });
+    }
+</code></pre>
+<h1 id="issue">Issue</h1>
+<ol>
+<li>GsonConverterFactory Cannot be resolve (Solved) : <a href="https://www.gitbook.com/book/rizaquelativa/java-android/edit#" target="_blank">https://stackoverflow.com/questions/33304420/retrofit-2-example-tutorial-but-gsonconverterfactory-display-error-cannot-resol</a>, (Library ini dipakai untuk mengconvert Json Format ke Object di dalam java object)</li>
+<li>Unable to create converter for java.util.List Retrofit: <a href="https://stackoverflow.com/questions/34315499/unable-to-create-converter-for-java-util-list-retrofit-2-0-0-beta2" target="_blank">https://stackoverflow.com/questions/34315499/unable-to-create-converter-for-java-util-list-retrofit-2-0-0-beta2</a> (secara simple dengan error ini membutuhkan 3 library yang harus ada dalam penggunaan retrofit2 : retrofit, okhttp, dan json converter)</li>
+<li>Best Praktis More Retrofit Example : <a href="https://github.com/codepath/android_guides/wiki/Consuming-APIs-with-Retrofit" target="_blank">https://github.com/codepath/android_guides/wiki/Consuming-APIs-with-Retrofit</a></li>
+</ol>
+<h1 id="referensi">Referensi</h1>
+<p><a href="http://square.github.io/retrofit/" target="_blank">http://square.github.io/retrofit/</a></p>
+<p><a href="https://github.com/codepath/android_guides/wiki/Consuming-APIs-with-Retrofit" target="_blank">https://github.com/codepath/android_guides/wiki/Consuming-APIs-with-Retrofit</a></p>
+<p><br><br><div style="text-align: center;color:gray;">Copyright &#xA9; 2018 Masyda Arrizaqu.<br>All rights reserved.</div></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="activity.html" class="navigation navigation-prev " aria-label="Previous page: Activity">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="issue.html" class="navigation navigation-next " aria-label="Next page: Issue">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"description":"written by masyda arrizaqu","title":"Retrofit","level":"1.3","depth":1,"next":{"title":"Issue","level":"1.4","depth":1,"path":"issue.md","ref":"issue.md","articles":[]},"previous":{"title":"Activity","level":"1.2","depth":1,"path":"activity.md","ref":"activity.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["signature","livereload"],"pluginsConfig":{"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"gitbook-plugin-signature":{"autoTimeStamp":{"color":"gray","timeStampFormat":"YYYY/MM/DD HH:mm:ss"},"autoCopyright":{"color":"gray","owner":"Masyda Arrizaqu","center":true},"signature":{"key":"customized signature"}},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"signature":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"retrofit.md","mtime":"2018-01-23T00:52:10.162Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-01-23T00:58:13.466Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
