@@ -1,3 +1,7 @@
+---
+author: Masyda Arrizaqu
+---
+
 # Retrofit
 
 Merupakan Library yang biasa digunakan untuk push atau get dari Request HTTP API,
@@ -135,3 +139,4 @@ public void getData(){
 [http://square.github.io/retrofit/](http://square.github.io/retrofit/)
 
 [https://github.com/codepath/android\_guides/wiki/Consuming-APIs-with-Retrofit](https://github.com/codepath/android_guides/wiki/Consuming-APIs-with-Retrofit)
+
