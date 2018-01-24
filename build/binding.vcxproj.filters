@@ -1,15 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="..">
-      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="..\build">
-      <UniqueIdentifier>{D5519164-BF26-36DA-740B-76CEFC1827F4}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="..\build\Release">
-      <UniqueIdentifier>{FF075A12-C1E5-B72E-66FE-329E5E401639}</UniqueIdentifier>
-    </Filter>
     <Filter Include="C:">
       <UniqueIdentifier>{7B735499-E5DD-1C2B-6C26-70023832A1CF}</UniqueIdentifier>
     </Filter>
@@ -33,9 +24,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\build\Release\binding.node">
-      <Filter>..\build\Release</Filter>
-    </None>
     <ClCompile Include="C:\devapps\nodejs\node_modules\node-gyp\src\win_delay_load_hook.cc">
       <Filter>C:\devapps\nodejs\node_modules\node-gyp\src</Filter>
     </ClCompile>
