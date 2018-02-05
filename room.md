@@ -11,14 +11,14 @@
 * Reference 
 
 ## Installation
-
+```java
 1. setup root build gradle 
-   ext {
+ext {
 
-    buildToolsVersion = "25.0.2"
-    supportLibVersion = "25.3.1"
-    archRoomVersion = "1.0.0-alpha1"
-   }
+buildToolsVersion = "25.0.2"
+supportLibVersion = "25.3.1"
+archRoomVersion = "1.0.0-alpha1"
+}
 
 allprojects {  
     repositories {  
@@ -27,11 +27,13 @@ allprojects {
         maven { url '[https://maven.google.com](https://maven.google.com)' }  
     }  
 }
+```
 
     2. setup modul build gradle
-    ```java
-    implementation 'android.arch.persistence.room:runtime:1.0.0'
-    annotationProcessor 'android.arch.persistence.room:compiler:1.0.0'
+```java
+implementation 'android.arch.persistence.room:runtime:1.0.0'
+annotationProcessor 'android.arch.persistence.room:compiler:1.0.0'
+```
 
 ## Define Object Persistance
 
