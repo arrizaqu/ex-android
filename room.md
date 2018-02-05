@@ -11,7 +11,7 @@
 * Reference 
 
 ## Installation
-1. setup root build gradle 
+### 1. setup root build gradle 
 
 ```java
 ext {
@@ -30,7 +30,7 @@ allprojects {
 }
 ```
 
-2. setup modul build gradle
+### 2. setup modul build gradle
 ```java
 implementation 'android.arch.persistence.room:runtime:1.0.0'
 annotationProcessor 'android.arch.persistence.room:compiler:1.0.0'
