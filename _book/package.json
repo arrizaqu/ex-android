@@ -1,0 +1,25 @@
+{
+  "scripts": {
+    "docs:prepare": "gitbook install",
+    "docs:watch": "npm run docs:prepare && gitbook serve",
+    "docs:generate-epub": "gitbook epub ./ ./_book/mybook.epub",
+    "docs:generate-pdf": "gitbook pdf ./ ./_book/mybook.pdf",
+    "docs:generate": "gitbook build && npm run docs:generate-epub && npm run docs:generate-pdf"
+  },
+  "dependencies": {
+    "bcrypt": "^1.0.3",
+    "build": "^0.1.4",
+    "canvas": "^2.0.0-alpha.9",
+    "canvg": "0.0.8",
+    "gitbook-plugin-autocover": "^2.0.0",
+    "gitbook-plugin-footer": "0.0.6",
+    "gitbook-plugin-signature": "^1.5.2",
+    "gtk": "0.0.1",
+    "node-gyp": "^3.6.2",
+    "trianglify": "^1.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.gitbook.com/rizaquelativa/java-android.git"
+  }
+}
