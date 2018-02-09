@@ -150,6 +150,24 @@ public void getData(){
     }
 ```
 
+## FULL Example 
+
+### Pojo
+
+```java
+public class Pesanan {
+        private String statusConfirm;
+        private String codePesan;
+        private String idTrayek;
+
+        public String getCodePesan() {
+            return codePesan;
+        }
+        
+        // setter and getter
+}
+```
+
 # Issue
 
 1. GsonConverterFactory Cannot be resolve \(Solved\) : [https://stackoverflow.com/questions/33304420/retrofit-2-example-tutorial-but-gsonconverterfactory-display-error-cannot-resol](https://www.gitbook.com/book/rizaquelativa/java-android/edit#), \(Library ini dipakai untuk mengconvert Json Format ke Object di dalam java object\)
