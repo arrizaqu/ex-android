@@ -150,7 +150,7 @@ public void getData(){
     }
 ```
 
-## FULL Example 
+## FULL Example
 
 ### Pojo
 
@@ -160,13 +160,11 @@ public class Pesanan {
         private String codePesan;
         private String idTrayek;
 
-        public String getCodePesan() {
-            return codePesan;
-        }
-        
         // setter and getter
 }
 ```
+
+### 
 
 # Issue
 
