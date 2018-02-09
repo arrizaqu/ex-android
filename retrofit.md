@@ -164,7 +164,7 @@ public class Pesanan {
 }
 ```
 
-### Save \(POST\)
+### Save \(POST and Body\)
 
 ```java
 public void save()  {
@@ -200,6 +200,8 @@ public void save()  {
         });
     }
 ```
+
+# Update \(PUT and Body\)
 
 # Issue
 
