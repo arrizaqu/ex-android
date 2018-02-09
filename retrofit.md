@@ -217,7 +217,7 @@ public void save()  {
     }
 ```
 
-# Update \(PUT and Body\)
+### Get Data \(GET\)
 
 ```java
 public void getData(){
@@ -245,6 +245,43 @@ public void getData(){
             @Override
             public void onFailure(Call<List<MateriEntity>> call, Throwable t) {
 
+            }
+        });
+    }
+```
+
+# Update \(PUT and Body\)
+
+```java
+public void updateData(){
+        Gson gson = new GsonBuilder()
+                .setDateFormat("yyyy-MM-dd'T'HH:mm:ssZ")
+                .create();
+
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl("https://batch131.herokuapp.com/")
+                .addConverterFactory(GsonConverterFactory.create(gson))
+                .build();
+
+        final InterfaceRequest requests = retrofit.create(InterfaceRequest.class);
+
+        Pesanan pesanan2 = new Pesanan();
+        pesanan2.setStatusConfirm("Confirmed");
+
+       // RequestBody requestBody = RequestBody.create(JSON, entity.toString());
+        Call<Void> call = requests.update(pesanan2, "3858");
+        call.enqueue(new Callback<Void>() {
+
+            @Override
+            public void onResponse(Call<Void> call, Response<Void> response) {
+                Toast.makeText(getApplicationContext(), "OK" , Toast.LENGTH_SHORT).show();
+                Log.d("dadali", "ok");
+            }
+
+            @Override
+            public void onFailure(Call<Void> call, Throwable t) {
+                Toast.makeText(getApplicationContext(), "Failed!!"+ t.getMessage(), Toast.LENGTH_SHORT).show();
+                Log.d("dadali", "error : "+ t.getMessage());
             }
         });
     }
