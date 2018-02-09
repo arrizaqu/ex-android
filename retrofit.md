@@ -250,7 +250,7 @@ public void getData(){
     }
 ```
 
-# Update \(PUT and Body\)
+### Update \(PUT and Body\)
 
 ```java
 public void updateData(){
