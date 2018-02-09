@@ -164,7 +164,42 @@ public class Pesanan {
 }
 ```
 
-### 
+### Save 
+
+```java
+public void save()  {
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl("https://batch131.herokuapp.com/")
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+
+        Gson gson = new GsonBuilder()
+                .setDateFormat("yyyy-MM-dd'T'HH:mm:ssZ")
+                .create();
+
+        final InterfaceRequest requests = retrofit.create(InterfaceRequest.class);
+        Pesanan pesanan = new Pesanan();
+        pesanan.setStatusConfirm("booked");
+        pesanan.setCodePesan("1234");
+
+        RequestBody requestBody = RequestBody.create(JSON, gson.toJson(pesanan));
+
+        Call<RequestBody> call = requests.save(pesanan);
+
+        call.enqueue(new Callback<RequestBody>() {
+
+            @Override
+            public void onResponse(Call<RequestBody> call, Response<RequestBody> response) {
+                Toast.makeText(getApplicationContext(), "ok", Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onFailure(Call<RequestBody> call, Throwable t) {
+                Toast.makeText(getApplicationContext(), "failed", Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
+```
 
 # Issue
 
