@@ -164,6 +164,22 @@ public class Pesanan {
 }
 ```
 
+### Interface Definition
+
+```java
+public interface InterfaceRequest {
+    @GET("kelompok3-ws/list")
+    Call<List<MateriEntity>> materies();
+
+    @POST("kelompok3-ws/save")
+    Call<RequestBody> save(@Body Pesanan materiEntity);
+
+    @Headers({"Content-Type: application/json"})
+    @PUT("kelompok3-ws/updcode/{codepesan}")
+    Call<Void> update(@Body Pesanan materiEntity, @Path("codepesan") String codepesan);
+}
+```
+
 ### Save \(POST and Body\)
 
 ```java
