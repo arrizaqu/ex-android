@@ -32,33 +32,36 @@
 		</string-array>
 	</resources>
 ### Getting Resource String-Array
-	String[] dataMonth = this.getResources().getStringArray(R.array.monts_list);
-	
+```java
+String[] dataMonth = this.getResources().getStringArray(R.array.monts_list);
+```
+
 ### SetAdapter ListView
-	ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, dataMonth);
-    listView.setAdapter(dataAdapter);
-	
+```java
+ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, dataMonth);
+listView.setAdapter(dataAdapter);
+```
+
 ## ListView Event Listener
-	* Anynomous method 
-		listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-				String text = listView.getItemAtPosition(i).toString();
-                Toast.makeText(getApplicationContext(), ""+text, Toast.LENGTH_LONG).show();
-            }
-        });
-		
-	* Implements 
-		* extends :
-			AppCompatActivity implements AdapterView.OnItemClickListener{	
-			
-		* Implements	
-			@Override
-			public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-				String text = listView.getItemAtPosition(i).toString();
-				Toast.makeText(getApplicationContext(), "hasil : "+text, Toast.LENGTH_LONG).show();
-			}
-			
+	* Anynomous method
+```java
+listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+    @Override
+    public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+			String text = listView.getItemAtPosition(i).toString();
+	Toast.makeText(getApplicationContext(), ""+text, Toast.LENGTH_LONG).show();
+    }
+});
+```
+```java
+AppCompatActivity implements AdapterView.OnItemClickListener{					
+	@Override
+	public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+	String text = listView.getItemAtPosition(i).toString();
+		Toast.makeText(getApplicationContext(), "hasil : "+text, Toast.LENGTH_LONG).show();
+	}
+}
+```			
 ## CustomeAdapter --Base Adapter
 ### Extends ArrayAdapter
 	public class PhoneAdapter extends ArrayAdapter<Phone>{
