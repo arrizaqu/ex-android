@@ -14,23 +14,26 @@
 		
 ## ListView Basic --Array adapter
 ### String Value 
-	<resources>
-		<string name="app_name">DataPopulate</string>
-		<string-array name="monts_list">
-			<item>Januari</item>
-			<item>Februari</item>
-			<item>Maret</item>
-			<item>April</item>4
-			<item>Mei</item>
-			<item>Juni</item>
-			<item>Juli</item>
-			<item>Agustus</item>
-			<item>September</item>
-			<item>Oktober</item>
-			<item>November</item>
-			<item>Desember</item>
-		</string-array>
-	</resources>
+```xml
+<resources>
+	<string name="app_name">DataPopulate</string>
+	<string-array name="monts_list">
+		<item>Januari</item>
+		<item>Februari</item>
+		<item>Maret</item>
+		<item>April</item>4
+		<item>Mei</item>
+		<item>Juni</item>
+		<item>Juli</item>
+		<item>Agustus</item>
+		<item>September</item>
+		<item>Oktober</item>
+		<item>November</item>
+		<item>Desember</item>
+	</string-array>
+</resources>
+```
+
 ### Getting Resource String-Array
 ```java
 String[] dataMonth = this.getResources().getStringArray(R.array.monts_list);
